@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./game.css" />
-
+    <link rel="stylesheet" href="/css/game.css" />
     <title>Game</title>
   </head>
   <body>
-    <div class="wraper">
-      <div class="Game-score">
-        <span class="score">score : 0</span>
-        <span class="score">high score : 0</span>
-      </div>
-      <div id="game-board"></div>
-    </div>
-    <script src="./snake.js" defer></script>
+    <header id="scoreHeader">
+      <section id="gameHeader">
+        <div><span id="actual-score"></span></div>
+        <div class="game-title">
+          <h1 id="title"></h1>
+        </div>
+        <div><span id="high-score"></span></div>
+      </section>
+    </header>
+    <div class="wraper" id="wraper"></div>
+    <script src="/js/game.js" defer></script>
+    <a class="GameBtn" href="/">Back to menu</a>
   </body>
 </html>
